@@ -1,4 +1,4 @@
-package com.thomas.golfapp_final.entity;
+package entity;
 
 import jakarta.persistence.*;
 

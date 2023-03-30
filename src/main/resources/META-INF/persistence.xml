@@ -5,7 +5,7 @@
              version="3.0">
     <persistence-unit name="default">
 
-        <class>com.thomas.golfapp_final.entity.Skyway</class>
+        <class>entity.Skyway</class>
         <properties>
             <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306"/>
             <property name="toplink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
