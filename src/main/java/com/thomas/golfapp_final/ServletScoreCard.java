@@ -1,6 +1,7 @@
 package com.thomas.golfapp_final;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -11,6 +12,16 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "ServletScoreCard", value = "/ServletScoreCard")
 public class ServletScoreCard extends HttpServlet {
+    protected int hole1;
+    protected int hole2;
+    protected int hole3;
+    protected int hole4;
+    protected int hole5;
+    protected int hole6;
+    protected int hole7;
+    protected int hole8;
+    protected int hole9;
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
@@ -22,10 +33,9 @@ public class ServletScoreCard extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
-        out.println("<html><head>"+"<link rel='stylesheet' href='golf_style.css'>"+"</head><body>");
+        out.println("<html><head>" + "<link rel='stylesheet' href='golf_style.css'>" + "</head><body>");
 
         int hole1 = Integer.parseInt(request.getParameter("hole1"));
         int hole2 = Integer.parseInt(request.getParameter("hole2"));
@@ -48,13 +58,10 @@ public class ServletScoreCard extends HttpServlet {
         out.println("</table>");
 
 
-
-
         out.println("</body></html>");
+
+
     }
 
 
-    protected String getParameter(String hole1) {
-        return hole1;
-    }
 }

@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a988ce5-6b72-4fc2-ae9a-1a34aa6912d6" name="Changes" comment="Okay - this seems to be working with the servlet. just need to do the Sql stuff ---">
+    <list default="true" id="5a988ce5-6b72-4fc2-ae9a-1a34aa6912d6" name="Changes" comment="I think I got the database to work --- saving this before I go any further.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a75d35bd-b071-43fa-b999-5dd084a250e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a75d35bd-b071-43fa-b999-5dd084a250e9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/golfapp_final/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/golfapp_final/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/golfapp_final/ServletScoreCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/golfapp_final/ServletScoreCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Skyway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/golfapp_final/Skyway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
       <module name="GOLFAPP_Final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thomas.golfapp_final.*" />
+          <option name="PATTERN" value="entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -310,6 +313,7 @@
       <workItem from="1680104563657" duration="3383000" />
       <workItem from="1680108011235" duration="3922000" />
       <workItem from="1680141439985" duration="2946000" />
+      <workItem from="1680144427606" duration="2100000" />
     </task>
     <task id="LOCAL-00001" summary="Okay - this seems to be working with the servlet. just need to do the Sql stuff">
       <created>1680109396909</created>
@@ -325,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680129644894</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I think I got the database to work --- saving this before I go any further.">
+      <created>1680145162619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680145162619</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +345,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Okay - this seems to be working with the servlet. just need to do the Sql stuff" />
     <MESSAGE value="Okay - this seems to be working with the servlet. just need to do the Sql stuff ---" />
-    <option name="LAST_COMMIT_MESSAGE" value="Okay - this seems to be working with the servlet. just need to do the Sql stuff ---" />
+    <MESSAGE value="I think I got the database to work --- saving this before I go any further." />
+    <option name="LAST_COMMIT_MESSAGE" value="I think I got the database to work --- saving this before I go any further." />
   </component>
 </project>

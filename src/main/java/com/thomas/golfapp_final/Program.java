@@ -1,5 +1,5 @@
 package com.thomas.golfapp_final;
-import entity.Skyway;
+import com.thomas.golfapp_final.entity.Skyway;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -17,15 +17,16 @@ public class Program extends ServletScoreCard {
         //I was using a scanner here to get the holes, then used them in the try statement//
 
         ServletScoreCard servletScoreCard = new ServletScoreCard();
-        int hole1 = Integer.parseInt(servletScoreCard.getParameter("hole1"));
-        int hole2 = Integer.parseInt(servletScoreCard.getParameter("hole2"));
-        int hole3 = Integer.parseInt(servletScoreCard.getParameter("hole3"));
-        int hole4 = Integer.parseInt(servletScoreCard.getParameter("hole4"));
-        int hole5 = Integer.parseInt(servletScoreCard.getParameter("hole5"));
-        int hole6 = Integer.parseInt(servletScoreCard.getParameter("hole6"));
-        int hole7 = Integer.parseInt(servletScoreCard.getParameter("hole7"));
-        int hole8 = Integer.parseInt(servletScoreCard.getParameter("hole8"));
-        int hole9 = Integer.parseInt(servletScoreCard.getParameter("hole9"));
+        int hole1 = servletScoreCard.hole1;
+        int hole2 = servletScoreCard.hole2;
+        int hole3 = servletScoreCard.hole3;
+        int hole4 = servletScoreCard.hole4;
+        int hole5 = servletScoreCard.hole5;
+        int hole6 = servletScoreCard.hole6;
+        int hole7 = servletScoreCard.hole7;
+        int hole8 = servletScoreCard.hole8;
+        int hole9 = servletScoreCard.hole9;
+
 
 
 
@@ -33,7 +34,7 @@ public class Program extends ServletScoreCard {
             transaction.begin();
 
             Skyway stroke = new Skyway();
-            //stroke.setRound(2);//
+
 
 
             stroke.setHole1(hole1);
