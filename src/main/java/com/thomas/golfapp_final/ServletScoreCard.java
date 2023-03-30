@@ -22,6 +22,7 @@ public class ServletScoreCard extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
+
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
         out.println("<html><head>"+"<link rel='stylesheet' href='golf_style.css'>"+"</head><body>");
@@ -50,5 +51,10 @@ public class ServletScoreCard extends HttpServlet {
 
 
         out.println("</body></html>");
+    }
+
+
+    protected String getParameter(String hole1) {
+        return hole1;
     }
 }
