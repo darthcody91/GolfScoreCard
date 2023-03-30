@@ -16,47 +16,33 @@ public class Program extends ServletScoreCard {
         EntityTransaction transaction = entityManager.getTransaction();
 
 
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("Hole 1: ");
+        int userHole1 = userInput.nextInt();
+        System.out.println("Hole 2: ");
+        int userHole2 = userInput.nextInt();
+        System.out.println("Hole 3: ");
+        int userHole3 = userInput.nextInt();
+        System.out.println("Hole 4: ");
+        int userHole4 = userInput.nextInt();
+        System.out.println("Hole 5: ");
+        int userHole5 = userInput.nextInt();
+        System.out.println("Hole 6: ");
+        int userHole6 = userInput.nextInt();
+        System.out.println("Hole 7: ");
+        int userHole7 = userInput.nextInt();
+        System.out.println("Hole 8: ");
+        int userHole8 = userInput.nextInt();
+        System.out.println("Hole 9: ");
+        int userHole9 = userInput.nextInt();
 
 
 
         try {
             transaction.begin();
 
-            //I was using a scanner here to get the holes, then used them in the try statement//
 
-       /* ServletScoreCard servletScoreCard = new ServletScoreCard();
-        int hole1 = servletScoreCard.hole1;
-        int hole2 = servletScoreCard.hole2;
-        int hole3 = servletScoreCard.hole3;
-        int hole4 = servletScoreCard.hole4;
-        int hole5 = servletScoreCard.hole5;
-        int hole6 = servletScoreCard.hole6;
-        int hole7 = servletScoreCard.hole7;
-        int hole8 = servletScoreCard.hole8;
-        int hole9 = servletScoreCard.hole9;
-
-        */
-
-            Scanner userInput = new Scanner(System.in);
-
-            System.out.println("Hole 1: ");
-            int userHole1 = userInput.nextInt();
-            System.out.println("Hole 2: ");
-            int userHole2 = userInput.nextInt();
-            System.out.println("Hole 3: ");
-            int userHole3 = userInput.nextInt();
-            System.out.println("Hole 4: ");
-            int userHole4 = userInput.nextInt();
-            System.out.println("Hole 5: ");
-            int userHole5 = userInput.nextInt();
-            System.out.println("Hole 6: ");
-            int userHole6 = userInput.nextInt();
-            System.out.println("Hole 7: ");
-            int userHole7 = userInput.nextInt();
-            System.out.println("Hole 8: ");
-            int userHole8 = userInput.nextInt();
-            System.out.println("Hole 9: ");
-            int userHole9 = userInput.nextInt();
 
             //Skyway stroke = new Skyway();
 
